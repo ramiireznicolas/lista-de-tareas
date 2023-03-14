@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap");
+@font-face {
+  font-family: fontAwesome;
+  src: url(./assets/fonts/fontawesome-free-5.15.4-web/css/fontawesome.css);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 10px;
+  background-color: #e1edd1;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-family: "Dancing Script", cursive;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 10px 15px;
+  font-family: "EB Garamond", serif;
+}
+main button {
+  background-color: #cf391d;
+  border: #cf391d 1px solid;
+  color: aliceblue;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 3px;
+}
+main button:hover {
+  cursor: pointer;
+  background-color: #cf5b47;
+}
+main button.add::before {
+  font-family: "fontAwesome";
+  content: "\f055";
+}
+main button.edit::before {
+  font-family: "fontAwesome";
+  content: "\f044";
+}
+main button.scrap::before {
+  font-family: "fontAwesome";
+  content: "\f058";
+}
+main button.erase::before {
+  font-family: "fontAwesome";
+  content: "\f12d";
+}/*# sourceMappingURL=style.css.map */

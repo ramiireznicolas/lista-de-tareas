@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Lista de Tareas</title>
+</head>
+<body>
+    <header><h1>Lista de Tareas.</h1></header>
+
+    <main class="container">
+        <section class="inputSection">
+            <form id="newTask"> 
+                <h2>Nueva Tarea</h2>
+                
+                <input type="text" id="newTaskInput" placeholder="Agregar una tarea">
+                
+                <button id="newTaskButton" class="add">
+                    <!-- <i class="fa-solid fa-circle-plus"></i> -->
+                </button>
+            </form>
+
+            <div class="emptyAlert hidden" id="emptyTask">La terea no puede estar vacia!</div>
+        </section> 
+        
+        <section class="taskSection">
+            <h2>Tareas a realizar</h2>
+
+            <!--Esto se va a llenar con JS-->
+            <div id="tasks">
+                <div class="container" id="container">
+                    <input type="text" class="taskInput" value="mock Task" readonly>
+                    
+                    <button class="edit">
+                       <!--  <i class="fa-solid fa-pen-to-square"></i> -->
+                    </button>
+                    
+                    <button class="scrap">
+                       <!-- <i class="fa-solid fa-strikethrough"></i> -->
+                    </button>
+
+                    <button class="erase">
+                       <!-- <i class="fa-solid fa-eraser"></i> -->
+                    </button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
