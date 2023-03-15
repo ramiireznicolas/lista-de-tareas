@@ -19,11 +19,15 @@ h1 {
   font-family: "Dancing Script", cursive;
 }
 
+h2 {
+  display: flex;
+}
+
 main {
   display: flex;
   flex-direction: column;
-  margin: 20px;
-  padding: 10px 15px;
+  margin: 2px;
+  padding: 5px;
   font-family: "EB Garamond", serif;
 }
 main button {
@@ -63,8 +67,8 @@ main button.notDone::before {
   content: "\f057";
 }
 main input {
-  width: 250px;
-  padding: 10px;
+  width: 220px;
+  padding: 5px;
   border-radius: 5px;
   margin-right: 10px;
   background-color: #b2b8ab;
