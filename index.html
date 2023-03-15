@@ -1,57 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--FontAwesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Lista de Tareas</title>
-</head>
-<body>
+  </head>
+  <body>
     <header><h1>Lista de Tareas.</h1></header>
 
     <main class="container">
-        <section class="inputSection">
-            <form id="newTask"> 
-                <h2>Nueva Tarea</h2>
-                
-                <input type="text" id="newTaskInput" placeholder="Agregar una tarea">
-                
-                <button id="newTaskButton" class="add">
-                    <!-- <i class="fa-solid fa-circle-plus"></i> -->
-                </button>
-            </form>
+      <section class="inputSection">
+        <form id="newTask">
+          <h2>Nueva Tarea</h2>
 
-            <div class="emptyAlert hidden" id="emptyTask">La terea no puede estar vacia!</div>
-        </section> 
-        
-        <section class="taskSection">
-            <h2>Tareas a realizar</h2>
+          <input
+            type="text"
+            id="newTaskInput"
+            placeholder="Agregar una tarea"
+          />
 
-            <!--Esto se va a llenar con JS-->
-            <div id="tasks">
-                <div class="container" id="container">
-                    <input type="text" class="taskInput" value="mock Task" readonly>
-                    
-                    <button class="edit">
-                       <!--  <i class="fa-solid fa-pen-to-square"></i> -->
-                    </button>
-                    
-                    <button class="scrap">
-                       <!-- <i class="fa-solid fa-strikethrough"></i> -->
-                    </button>
+          <button id="newTaskButton" class="add"></button>
+        </form>
 
-                    <button class="erase">
-                       <!-- <i class="fa-solid fa-eraser"></i> -->
-                    </button>
-                </div>
-            </div>
+        <div class="emptyAlert hidden" id="emptyTask">
+          LA TAREA NO PUEDE ESTAR VACIA!
+        </div>
+      </section>
 
-        </section>
+      <section class="taskSection">
+        <h2>Tareas a realizar</h2>
+
+        <!-- Relleno con JS -->
+        <div id="tasks">
+          <!--<div class="container" id="container">
+            <input type="text" class="taskInput" value="mock Task" readonly />
+
+            <button class="edit"></button>
+
+            <button class="scrap"></button>
+
+            <button class="erase"></button>
+          </div>-->
+        </div>
+      </section>
     </main>
 
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>

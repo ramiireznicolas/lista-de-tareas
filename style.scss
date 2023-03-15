@@ -6,8 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
 //paleta de colores
-$light: #e1edd1;
-$light-green: #aab69b;
+$light: #ebf5df;
+$light-green: #b2b8ab;
 $yellow-light: #9e906e;
 $brown: #cf5b47;
 $red-brown: #cf391d;
@@ -61,5 +61,46 @@ main{
             font-family: "fontAwesome";
             content: "\f12d";
         }
+        &.save::before{
+            font-family: "fontAwesome";
+            content: "\f0c7";
+        }
+        &.notDone::before{
+            font-family: "fontAwesome";
+            content: "\f057";
+        }
     }
+
+    input{
+        width: 250px;
+        padding: 10px;
+        border-radius: 5px;
+        margin-right: 10px;
+        background-color: $light-green;
+        border: $light-green 2px solid;
+        margin-bottom: 3px;
+    }
+
+    .emptyAlert{
+        padding: 5px 0 25px;
+    }
+
+    .hidden{
+        visibility: hidden;
+    }
+
+    .taskSection{
+        margin-top: 5px;
+    }
+    
+    .taskInput:not(:read-only){
+        cursor: text;
+        color: rgb(97, 84, 84);
+        font-weight: 600;
+    }
+
+    .taskInput .done{
+        text-decoration: line-through;
+    }
+
 }

@@ -11,7 +11,7 @@
 
 body {
   padding: 10px;
-  background-color: #e1edd1;
+  background-color: #ebf5df;
 }
 
 h1 {
@@ -53,4 +53,43 @@ main button.scrap::before {
 main button.erase::before {
   font-family: "fontAwesome";
   content: "\f12d";
+}
+main button.save::before {
+  font-family: "fontAwesome";
+  content: "\f0c7";
+}
+main button.notDone::before {
+  font-family: "fontAwesome";
+  content: "\f057";
+}
+main input {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #b2b8ab;
+  border: #b2b8ab 2px solid;
+  margin-bottom: 3px;
+}
+main .emptyAlert {
+  padding: 5px 0 25px;
+}
+main .hidden {
+  visibility: hidden;
+}
+main .taskSection {
+  margin-top: 5px;
+}
+main .taskInput:not(:-moz-read-only) {
+  cursor: text;
+  color: rgb(97, 84, 84);
+  font-weight: 600;
+}
+main .taskInput:not(:read-only) {
+  cursor: text;
+  color: rgb(97, 84, 84);
+  font-weight: 600;
+}
+main .taskInput .done {
+  text-decoration: line-through;
 }/*# sourceMappingURL=style.css.map */
