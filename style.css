@@ -10,17 +10,25 @@
 }
 
 body {
-  padding: 10px;
   background-color: #ebf5df;
+  text-align: center;
 }
 
 h1 {
   font-size: 2.5em;
   font-family: "Dancing Script", cursive;
+  margin: 30px 0 30px;
 }
 
 h2 {
   display: flex;
+  justify-content: center;
+  margin-bottom: 3px;
+}
+
+h3 {
+  display: flex;
+  font-size: 1.5em;
 }
 
 main {
@@ -29,6 +37,8 @@ main {
   margin: 2px;
   padding: 5px;
   font-family: "EB Garamond", serif;
+  max-width: 550px;
+  margin: auto;
 }
 main button {
   background-color: #cf391d;
@@ -67,13 +77,12 @@ main button.notDone::before {
   content: "\f057";
 }
 main input {
-  width: 220px;
+  width: 60%;
   padding: 5px;
   border-radius: 5px;
-  margin-right: 10px;
+  margin: auto 10px 3px;
   background-color: #b2b8ab;
   border: #b2b8ab 2px solid;
-  margin-bottom: 3px;
 }
 main .emptyAlert {
   padding: 5px 0 25px;
@@ -82,7 +91,15 @@ main .hidden {
   visibility: hidden;
 }
 main .taskSection {
-  margin-top: 5px;
+  margin-bottom: 5px;
+}
+main .taskSection .container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+main .taskInput {
+  cursor: auto;
 }
 main .taskInput:not(:-moz-read-only) {
   cursor: text;
@@ -94,6 +111,6 @@ main .taskInput:not(:read-only) {
   color: rgb(97, 84, 84);
   font-weight: 600;
 }
-main .taskInput .done {
+main .taskInput.done {
   text-decoration: line-through;
 }/*# sourceMappingURL=style.css.map */
