@@ -12,6 +12,10 @@
 body {
   background-color: #ebf5df;
   text-align: center;
+  background-image: url(./assets/HojaEnBlanco.PNG);
+  background-position: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -92,6 +96,7 @@ main .hidden {
 }
 main .taskSection {
   margin-bottom: 5px;
+  height: 50vh;
 }
 main .taskSection .container {
   display: flex;
